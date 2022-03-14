@@ -70,7 +70,7 @@ responses:
   utter_despedida:
   - text: Muchas gracias por su tiempo, adiós | EXIT
   utter_bot:
-  - text: Estamos llamando desde Autopista vespucio norte y Soy un asistente virtual.
+  - text: Estamos llamando desde autopista vespucio norte y Soy un asistente virtual.
 actions:
 - action_ask_question
 - action_ask_question2
