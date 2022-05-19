@@ -184,6 +184,7 @@ class ActionSiPaga(Action):
         #database = DataBase()
         global uniqueid
         uniqueid = tracker.sender_id
+        Querys(uniqueid)
         #llamarDB(uniqueid)
         today_date = date.today()
         td = timedelta(3)
@@ -216,6 +217,7 @@ class ActionNoPaga(Action):
         global uniqueid
         uniqueid = tracker.sender_id
         #llamarDB(uniqueid)
+        Querys(uniqueid)
         motivo = tracker.get_slot("razon")
         Updates(4,motivo,4,derivacion,fecha_com,"Si",uniqueid,rut)
         dispatcher.utter_message(f"Muchas gracias por su tiempo. Para más información puede ingresar a triple doble b .sicc.cl. Que tenga un lindo dia! | EXIT")#{primernombre}
